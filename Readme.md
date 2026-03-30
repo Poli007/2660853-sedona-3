@@ -2,7 +2,7 @@
 
 * Студент: [Polina](https://up.htmlacademy.ru/htmlcss-individual/3/user/2660853).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
-
+* Сайт:[Мой проект SEDONA](https://poli007.github.io/2660853-sedona-3/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

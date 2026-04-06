@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="main-navigation-logo" src="#" alt="Логотип города Седона">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="navigation-item">
+          <a class="navigation-link" href="#">
+              О Cедоне
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-current" href="#" title="Вы на вкладке Гостиницы">
+              Гостиницы
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation-list-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link-search" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link-favourites" href="#">
+              <span class="visually-hidden">
+                Избранное
+              </span>
+              <span class="notification-badge">12</span>
+            </a>
+          </li>
+          <li class="navigation-user-list">
+           <a class="navigation-user-link button" href="#">
+            ХОЧУ СЮДА!
+          </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-index">
+      <h2 class="main-title">
+        Гостиницы Седоны
+      </h2>
+      <section>
+        <h3 class="visually-hidden">
+          Настраиваемые фильтры
+        </h3>
+        <ul class="checkbox-list">
+          <li class="checkbox-item">
+            Инфраструктура
+          </li>
+          <p class="checkbox-option-text">
+            <input type="checkbox" name="option" id="option-pool" checked>
+          <label for"option-pool">
+            Бассейн
+          </label>
+          </p>
+          <p class="checkbox-option-text">
+            <input type="checkbox" name="option" id="option-parking" checked>
+            <label for="option-parking">
+              Парковка
+            </label>
+          </p>
+          <p class="checkbox-option-text">
+            <input type="checkbox" name="internet" id="option-internet">
+            <label for="option-internet">
+              Wi-Fi
+            </label>
+          </p>
+          <li class="radio-item">
+            Тип Жилья:
+          </li>
+          <p class="radio-option-text">
+            <input type="radio" name="option" value="option-one" id="option-hotel" checked>
+            <label for="option-hotel">
+              Гостиница
+            </label>
+          </p>
+          <p class="radio-option-text">
+            <input type="radio" name="option" value="option-two" id="option-motel">
+            <label for="option-motel">
+              Мотель
+            </label>
+          </p>
+          <p class="radio-option-text">
+            <input type="radio" name="option" value="option-free" id="option-apartments">
+            <label for="option-apartments">
+              Апартаменты
+            </label>
+          </p>
+          <li class="price">
+            Стоимость, ₽:
+            <form class="price-form" action="https://echo.htmlacademy.ru/" method="get">
+              <fiedset>
+                <legend>Стоимость, ₽:</legend>
+                <label>
+                  от
+                  <input type="text" value="0">
+                </label>
+                <label>
+                  до
+                  <input type="text" value="9000">
+                </label>
+              </fiedset>
+
+            </form>
+
+          </li>
+        </ul>
+      </section>
+
+
+
+
+    </main>
+
+
+    <footer>
+      <section class="footer-socials">
+              <h2 class="visually-hidden">
+              Полезные контакты
+              </h2>
+        <ul>
+          <li class="visually-hidden">
+            <a class="footer-socials-vkontakte" href="https://vk.com/htmlacademy">
+              <img class="vkontakte-image" src="#" alt="Иконка Вконтакте">
+            </a>
+          </li>
+          <li class="visually-hidden">
+            <a class="footer-socials-telegram" href="https://t.me/htmlacademy">
+              <img class="telegram-image" src="#" alt="Иконка Телеграмм">
+            </a>
+          </li>
+          <li class="visually-hidden">
+            <a class="footer-socials-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="youtube-image" src="#" alt="Иконка Ютуб">
+            </a>
+          </li>
+        </ul>
+        <p class="footer-phone">
+          <a class="footer-phone" href="tel:88128121212">
+          +7 (812 812-12-12)
+          </a>
+        </p>
+        <p class="footer-logo">
+          <a class="footer-logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="#" alt="Логотип HTML Academy">
+          </a>
+        </p>
+      </section>
+    </footer>
+  </body>
+  </html>

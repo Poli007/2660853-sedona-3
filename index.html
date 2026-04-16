@@ -9,10 +9,11 @@
   </head>
 
   <body>
-    <header class="main-header">
-      <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="navigation-logo-image" src="#" alt="Логотип города Седона">
+    <header class="header-index">
+      <nav class="header-navigation">
+        <a class="navigation-logo" href="index.html" title="Переход на главную страницу">
+          <img class="navigation-logo-image" src="images/header/logo-sedona.svg" width="140" height="70"
+            alt="Логотип города Седона"/>
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -31,18 +32,18 @@
             </a>
           </li>
         </ul>
-        <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link-search" href="#">
+        <ul class="navigation-list-user">
+          <li class="navigation-item-user">
+            <a class="navigation-link-user-search" href="#" title="Поиск">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link-favourites" href="#">
+            <a class="navigation-link-user-favourites" href="#" title="Перейти в избранное">
               <span class="visually-hidden">
-                Избранное
+                Отелей в избранном
               </span>
               <span class="notification-badge">
                 12
@@ -51,7 +52,7 @@
           </li>
           <li class="navigation-user-list">
             <a class="navigation-user-link" href="#">
-              ХОЧУ СЮДА!
+              Хочу сюда!
             </a>
           </li>
         </ul>
@@ -59,22 +60,26 @@
     </header>
 
     <main class="main-index">
+      <h1 class="visually-hidden">
+        Седона
+      </h1>
       <section class="hero-section">
-        <h1 class="visually-hidden">
-          СЕДОНА
-        </h1>
-        <img class="hero-section-image" src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
-        <h2 class="section-desc">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        <h2 class="visually-hidden">
+          Приветствие
         </h2>
-        <p class="section-text">
+        <img class="hero-section-image" src="images/index/welcome.svg" width="458" height="352"
+          alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+        <p class="hero-section-description">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+        <p class="hero-section-text">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </section>
 
       <section class="advantages">
         <h2 class="visually-hidden">
-          Преимущества
+          Преимущества города Седоны
         </h2>
         <ul class="advantages-list">
           <li class="advantages-item">
@@ -84,7 +89,8 @@
             <p class="advantages-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-            <img class="advantages-image" src="#" alt="Крыши домов на фоне гор">
+            <img class="advantages-image" src="images/index/street-sedona.jpg" width="800" height="385"
+              alt="Крыши домов на фоне гор">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-subtitle">
@@ -117,13 +123,15 @@
             <p class="advantages-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-            <img class="advantages-image" src="#" alt="Каньон и горы">
+            <img class="advantages-image" src="images/index/bridge-devil.jpg" width="800" height="385"
+              alt="Каньон и горы">
           </li>
         </ul>
       </section>
+
       <section class="infrastructure">
         <h2 class="visually-hidden">
-          Инфраструктура
+          Инфраструктура города Седоны
         </h2>
         <p class="section-desc">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
@@ -158,9 +166,10 @@
           </li>
         </ul>
       </section>
+
       <section class="search">
         <h2 class="visually-hidden">
-          Поиск гостиницы
+          Поиск гостиницы в Седоне
         </h2>
         <p class="section-desc">
           Заинтересовались?
@@ -174,11 +183,14 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="mailing-footer">
       <section class="mailing">
-        <h2 class="mailing-title">
-          Подпишитесь на рассылку
+        <h2 class="visually-hidden">
+          Рассылка
         </h2>
+        <p class="mailing-text">
+          Подпишитесь на рассылку
+        </p>
         <p class="mailing-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
@@ -189,24 +201,31 @@
           </button>
         </form>
       </section>
+
       <section class="footer-socials">
         <h2 class="visually-hidden">
           Полезные контакты
         </h2>
-        <ul>
+        <ul class="footer-socials-list">
           <li class="footer-socials-item">
-            <a class="footer-socials-vkontakte" href="https://vk.com/htmlacademy">
-              <img class="vkontakte-image" src="#" alt="Иконка Вконтакте">
+            <a class="footer-socials-linl-vkontakte" href="https://vk.com/htmlacademy" title="Вконтакте">
+              <span class="visually-hidden">
+                Иконка Вконтакте
+              </span>
             </a>
           </li>
           <li class="footer-socials-item">
-            <a class="footer-socials-telegram" href="https://t.me/htmlacademy">
-              <img class="telegram-image" src="#" alt="Иконка Телеграмм">
+            <a class="footer-socials-link-telegram" href="https://t.me/htmlacademy" title="Телеграмм">
+              <span class="visually-hidden">
+                Иконка Телеграмм
+              </span>
             </a>
           </li>
           <li class="footer-socials-item">
-            <a class="footer-socials-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="youtube-image" src="#" alt="Иконка Ютуб">
+            <a class="footer-socials-link-youtube" href="https://www.youtube.com/user/htmlacademyru" title="Ютуб">
+              <span class="visually-hidden">
+                Иконка Ютуб
+              </span>
             </a>
           </li>
         </ul>
@@ -217,10 +236,13 @@
         </p>
         <p class="footer-logo">
           <a class="footer-logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="#" alt="Логотип HTML Academy">
+            <span class="visually-hidden">
+              Логотип HTML Academy
+            </span>
           </a>
         </p>
       </section>
     </footer>
   </body>
+
 </html>

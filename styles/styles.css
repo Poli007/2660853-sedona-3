@@ -1,353 +1,407 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
 }
 
-@font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
+html {
+  height: 100%;
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21px;
-    background-color: #ffffff;
-    color: #000000;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Кнопки */
 .button {
-    font-family: inherit;
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: #82B3D3;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #82b3d3;
 }
 
 .card-title-link {
-    background-color: #756157;
+  background-color: #756157;
 }
 
 /* кнопки на странице каталога*/
 .sort-view-link-button {
-    color: #000000;
-    background-color: #ffffff;
-    text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
 }
 
 .button-catalog {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .button-catalog-favourites {
-    background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-catalog-choice {
-    background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .button-use {
-    background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-reset {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 
 .search-button {
-    background-color: #756157;
+  background-color: #756157;
 }
 
 
 
 /* Шапка с навигацией */
+.header-navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 520px;
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+}
+
+.navigation-list-user {
+  width: 320px;
+  margin-left: auto;
+}
+
+
 .page-header {
-    background-color: #ffffff;
-    color: #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .navigation-link,
 .navigation-link-user {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    background-color: #ffffff;
-    color: #000000;
-    text-align: left;
-    text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+/* ОСНОВНОЙ КОНТЕНТ */
+.main-conteiner {
+  flex-grow: 1;
+}
+
+.page-conteiner {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.hero-section-image {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Фоновая картинка в херо блоке */
 .hero-section {
-    background-image: url(../images/index/index-photo.jpg);
-    background-color: #909ba2;
-    color: #000000;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    background-size: 1200px;
-    min-height: 485px;
+  background-image: url("../images/index/collar-index.svg"), url("../images/index/index-photo.jpg");
+  background-color: #909ba2;
+  color: #000000;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, scroll;
+  background-position: bottom, center;
+  background-size: 100%, cover;
 }
 
 /* Призывы к действию */
 .section-describes {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-    text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .section-text {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    color: #333333;
-    text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
 }
 
 /* Список: преимущества и сервис */
 .advantages-subtitle,
 .infrastructure-subtitle {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
-    text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages-description,
 .infrastructure-description {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
 }
 
 .advantages-list li:nth-child(4n+1) {
-    background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-list li:nth-child(2n) {
-    background-color: rgba(131, 179, 211, 12%);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-list li:nth-child(3n) {
-    background-color: rgba(131, 179, 211, 20%);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
-.infrastructure-list li:first-child,
-.infrastructure-list li:last-child {
-    background-color: rgba(131, 179, 211, 12%);
+.infrastructure-list li:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.infrastructure-list li:nth-child(2n) {
-    background-color: #ffffff;
+.infrastructure-list li:nth-child(even) {
+  background-color: #ffffff;
 }
 
 
 /* Подвал сайта */
 .mailing {
-    background-image: url(../images/footer/background-subscribe.jpg);
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
+  background-image: url("../images/footer/background-subscribe.jpg");
+  background-color: #909ba2;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
 }
 
+input[type="email"] {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+}
+
+
 .footer-socials {
-    background-color: #ffffff;
-    color: #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .footer-socials-link {
-    background-color: #ffffff;
-    color: #000000;
-    text-decoration: none;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
 }
 
 .footer-phone-link {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    text-decoration: none;
-    text-transform: capitalize;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .footer-logo-link {
-    background-image: url(../images/footer/logo-htmlacademy.svg);
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    text-decoration: none;
+  background-image: url("../images/footer/logo-htmlacademy.svg");
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
 }
 
 .function-color {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /* СТРАНИЦА КАТАЛОГА */
 
 .page-filter {
-    background-image: url(../images/catalog/background-filter.jpg);
-    background-color: #000000;
-    color: #ffffff;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+  background-image: url("../images/catalog/background-filter.jpg");
+  background-color: #909ba2;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .inner-title {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 78px;
-    color: inherit;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: inherit;
 }
 
 .breadcrumbs-list,
 .breadcrumbs-link {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: inherit;
-    text-align: left;
-    text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
 }
 
 .catalog-filter-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: inherit;
 }
+
+input[type="number"] {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-align: right;
+}
+
+input[value="0"],
+input[value="9000"] {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-align: right;
+}
+
+
 
 /* Вид представления карточек */
 .sorting-container {
-    color: #000000;
-    background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .results-search {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .sort-price {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 /* Каталог */
 
 .card-item {
-    font-weight: 700;
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 24px;
-    line-height: 28px;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .card-description {
-    font-weight: 400;
-    background-color: #ffffff;
-    color: #333333;
-    font-size: 18px;
-    line-height: 21px;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
 
 }
 
 .rating-value {
-    font-weight: 400;
-    background-color: #F2F2F2;
-    color: #333333;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
+  font-weight: 400;
+  background-color: #F2F2F2;
+  color: #333333;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 /* Пагинация*/
 
 .pagination-link {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    color: #ffffff;
-    background-color: #82B3D3;
-    text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
 }
 
 .pagination-link-current {
-    color: #000000;
-    background-color: #F2F2F2;
-    text-decoration: none;
+  color: #000000;
+  background-color: #f2f2f2;
+  text-decoration: none;
 
-    text-decoration: none;
 }
 
 
 
 /*Подвал каталога*/
 .mailing-text-catalog {
-    color: #000000;
-    background-color: #ffffff;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .mailing-description-catalog {
-    color: #333333;
-    background-color: #ffffff;
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
 }

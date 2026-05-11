@@ -116,16 +116,22 @@ body {
   background-color: #756157;
   display: block;
   box-sizing: border-box;
-  width: 452px;
-  padding: 0 20px;
-  margin: 0 auto;
   border: 0;
+  border-radius: 4px;
+  min-height: 52px;
+  padding: 8px 50px;
+  margin: 0 auto;
+
 }
 
 /* Шапка с навигацией */
+
 .page-header {
   background-color: #ffffff;
   color: #000000;
+  }
+.navigation-logo {
+
 }
 
 .header-navigation {
@@ -159,6 +165,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: block;
+  box-sizing: border-box;
   padding: 20px 16px;
 }
 
@@ -174,11 +181,15 @@ body {
 }
 
 .navigation-link-user-goto {
-  padding: 8px 34px;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
   background-color: #756157;
+  border-radius: 4px;
   text-transform: uppercase;
-  /*  vertical-align: middle; */
+  padding: 8px 34px;
+  align-items: center;
+  min-height: 36px;
 }
 
 /* ОСНОВНОЙ КОНТЕНТ */
@@ -186,6 +197,7 @@ body {
 .hero-section {
   text-align: center;
   padding: 51px 371px 82px 371px;
+
 }
 
 .hero-section-image {
@@ -261,11 +273,6 @@ body {
   padding: 0;
   display: flex;
 }
-
-/*   Необходимо сделать прилегание картинки к нижнему краю - исключить пустое пространство
- .advantages-item img {
-    vertical-align: middle;
-  } */
 
 .advantages-item-bridge {
   flex-direction: row-reverse;
@@ -367,18 +374,19 @@ body {
 
 .mailing-form input {
   background-color: #f2f2f2;
-}
-
-.mailing-form input {
   box-sizing: border-box;
   width: 452px;
-  padding: 0 20px;
+  min-height: 52px;
+  padding: 14px 20px;
+  border-radius: 4px 0 0 4px;
 }
 
 .mailing-form button {
   box-sizing: border-box;
-  width: 232px;
-  padding: 0 50px;
+  min-width: 232px;
+  min-height: 52px;
+  padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
 }
 
 .footer-socials {
@@ -532,6 +540,7 @@ input[type="email"] {
   border: 0;
   margin-right: 70px;
 }
+
 .catalog-filter-group-price {
   margin-left: auto;
 }

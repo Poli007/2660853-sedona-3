@@ -24,7 +24,7 @@ body {
   margin: 0;
 }
 
-.visually-hidden {
+ .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -518,6 +518,7 @@ input[type="email"] {
 .button-catalog-container .button-catalog {
   display: block;
 }
+
 .button-catalog-container {
   margin-top: 56px;
 }
@@ -556,11 +557,11 @@ input[value="9000"] {
 }
 
 input[value="0"] {
-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 input[value="9000"] {
-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 /* Вид представления карточек */
@@ -679,7 +680,6 @@ border-radius: 0 4px 4px 0;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  grid-template-rows: repeat (2, 438px);
   gap: 20px;
   margin: 0;
   padding: 0;
@@ -688,58 +688,87 @@ border-radius: 0 4px 4px 0;
 .card-item {
   box-sizing: border-box;
   width: 340px;
+  /* min-height: 438px; */
   margin: 0;
   padding: 20px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-}
-
-.card-image {
-  margin-bottom: 16px;
-}
-
-.card-description {
-  font-weight: 400;
-  background-color: #ffffff;
-  color: #333333;
-  font-size: 18px;
-  line-height: 21px;
-  margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows: 28px 21px 36px 37px;
+ /*  grid-template-rows: 256px 21px 36px 36px; */
   column-gap: 20px;
   row-gap: 16px;
 }
 
-.card-description-name {
+.card-image-name-link {
   grid-column: 1/-1;
+  text-decoration: none;
+}
+
+.card-image {
+  margin-bottom: 16px;
+  /* object-fit: contain; */
+  background-color: #e5e5e5;
+  height: 212px;
+  width: 300px;
+}
+
+.card-description-name {
+  margin: 0;
   font-weight: 700;
   background-color: #ffffff;
   color: #000000;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
+  text-align: left;
+  height: auto;
+}
+
+.card-description-housing {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color: #333333;
 }
 
 .card-description-price {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: #333333;
   text-align: right;
 }
 
 .card-title-link {
+  grid-column: 1/2;
+  grid-row: 3/4;
   background-color: #756157;
+  box-sizing: border-box;
   padding: 8px 26px;
   border-radius: 4px;
 }
 
+.button-catalog-favourites {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.button-catalog-choice {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.rating-star {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  }
+
 .rating-value {
-  font-weight: 400;
-  background-color: #f2f2f2;
-  color: #333333;
+  grid-column: 2/3;
+  grid-row: 4/5;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  box-sizing: border-box;
   padding: 8px 22px;
   border-radius: 4px;
 }

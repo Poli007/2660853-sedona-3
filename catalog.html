@@ -71,6 +71,10 @@
                 <span class="visually-hidden">
                   Домой, на главную страницу
                 </span>
+                <svg class="house-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none"
+                  viewBox="0 0 13 15">
+                  <path d="m6.5.5-6 5.8v6.2h12V6.3zm5 11h-10V6.7l5-4.8 5 4.8z" />
+                  <path d="M4.5 10.5h1V8h2v2.5h1V7h-4z" />
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -85,52 +89,69 @@
               Настройка фильтров
             </h2>
             <fieldset class="catalog-filter-group infrastructure">
+
               <legend class="catalog-filter-title infrastructure-option">
                 Ифраструктура:
               </legend>
-              <label class="option-pool">
-                <input type="checkbox" name="pool" checked>
-                Бассейн
+              <label class="option option-pool">
+                <input class="option-input" type="checkbox" name="pool" checked>
+                <span class="control-option"> </span>
+                <span class="option-name"> Бассейн </span>
+                </label>
+              <label class="option option-parking">
+                <input class="option-input" type="checkbox" name="parking" checked>
+                <span class="control-option"> </span>
+                <span class="option-name">Парковка </span>
               </label>
-              <label class="option-parking">
-                <input type="checkbox" name="parking" checked>
-                Парковка
-              </label>
-              <label class="option-internet">
-                <input type="checkbox" name="internet">
-                Wi-Fi
+              <label class="option option-internet">
+                <input class="option-input" type="checkbox" name="internet">
+                <span class="control-option"> </span>
+                <span class="option-name">Wi-Fi</span>
               </label>
             </fieldset>
+
             <fieldset class="catalog-filter-group hotel">
               <legend class="catalog-filter-title hotel-option">
                 Тип Жилья:
               </legend>
-              <label class="hotel-option">
-                <input type="radio" name="hotel-option" value="hotel" checked>
-                Гостиница
+              <label class="option hotel-option">
+                <input class="option-input" type="radio" name="hotel-option" value="hotel" checked>
+                <span class="control-radio control-option"> </span>
+                <span class="option-name">Гостиница</span>
               </label>
-              <label class="option-motel">
-                <input type="radio" name="hotel-option" value="motel">
-                Мотель
+              <label class="option option-motel">
+                <input class="option-input" type="radio" name="hotel-option" value="motel">
+                <span class="control-radio control-option"> </span>
+                <span class="option-name">Мотель</span>
               </label>
-              <label class="option-apartments">
-                <input type="radio" name="hotel-option" value="apartments">
-                Апартаменты
+              <label class="option option-apartments">
+                <input class="option-input" type="radio" name="hotel-option" value="apartments">
+                <span class="control-radio control-option"> </span>
+                <span class="option-name">Апартаменты</span>
               </label>
             </fieldset>
+
             <fieldset class="catalog-filter-group catalog-filter-group-price">
               <legend class="catalog-filter-title">
                 Стоимость, ₽:
               </legend>
               <div class="number-container">
-                <label>
-                  <!-- От -->
-                  <input type="number" name="от" value="0">
+                <label class="min">
+                  <span class="prefix-min"> от </span>
+                  <input type="number" name="number-min" value="0">
                 </label>
-                <label>
-                  <!--  До -->
-                  <input type="number" name="до" value="9000">
+                <label class="max">
+                  <span class="prefix-max"> до </span>
+                  <input type="number" name="number-max" value="9000">
                 </label>
+              </div>
+              <div class="rang-scale">
+                <div class="rang-bar" style="left: 0; width:226px">
+                  <button class="rang-toggle toggle-min" type="button">
+                  </button>
+                  <button class="rang-toggle toggle-max" type="button">
+                  </button>
+                </div>
               </div>
             </fieldset>
             <div class="button-catalog-container">
@@ -239,7 +260,7 @@
                   <span class="card-description-price">От 5000 ₽</span>
                   <a class="card-title-link button-catalog" href="#">Подробнее</a>
                   <button class="button-catalog button-catalog-choice" type="button">В избранном</button>
-                  <span class="rating-star star-3">
+                  <span class="rating-star star-4">
                     <p class="visually-hidden">4 звезды</p>
                   </span>
                   <span class="rating-value">Рейтинг: 9,2</span>
@@ -260,11 +281,6 @@
                   <button class="button-catalog button-catalog-favourites" type="button">В избранное</button>
                   <span class="rating-star star-3">
                     <p class="visually-hidden"> 3 звезды </p>
-                    <svg class="rating-star-3" aria-hidden="true" focusable="none" xmlns="http://www.w3.org/2000/svg" width="24" height="17" fill="none" viewBox="0 0 24 17">
-                      <path fill="#83b3d3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9z" />
-
-                      <svg class="rating-star-3" aria-hidden="true" focusable="none" xmlns="http://www.w3.org/2000/svg" width="24" height="17" fill="none" viewBox="-24 0 24 17">
-                      <path fill="#83b3d3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9z" />
                   </span>
                   <span class="rating-value">Рейтинг: 6,9</span>
                 </div>

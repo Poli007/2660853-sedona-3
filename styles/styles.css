@@ -68,7 +68,6 @@ body {
 .main-inner {
   margin-top: -6px;
   position: relative;
-
 }
 
 
@@ -96,9 +95,14 @@ body {
 }
 
 .navigation-logo,
-.navigation-link-current::before {
+ .navigation-link-current::before {
   position: relative;
   z-index: 2;
+
+}
+
+.navigation-logo {
+margin: 0;
 }
 
 .header-navigation {
@@ -116,10 +120,12 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  gap: 4px;
 }
 
 .navigation-list-user {
   justify-content: flex-end;
+  gap: 4px;
 }
 
 .navigation-link,
@@ -134,12 +140,10 @@ body {
   display: block;
   box-sizing: border-box;
   padding: 20px 16px;
+
 }
 
-.navigation-link:hover {
-  color: #756157;
-}
-
+.navigation-link:hover,
 .navigation-link:focus {
   color: #756157;
 }
@@ -156,21 +160,53 @@ body {
 }
 
 .navigation-link-user-favourites {
-  margin-right: 20px;
+  margin-right: 16px;
   position: relative;
 }
 
-.navigation-link-user-search {
-  background-image: url("../images/header/loupe.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+/* .navigation-loupe-icon {
+  fill:#000000;
 }
+.navigation-loupe-icon:hover,
+.navigation-loupe-icon:focus {
+  fill: #756157;
+}
+
+.navigation-favourites-icon {
+  fill:#000000;
+  position: relative;
+}
+.navigation-favourites-icon:hover,
+.navigation-favourites-icon:focus {
+  fill: #756157;
+} */
 
 .navigation-link-user-favourites {
   background-image: url("../images/header/favourites.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
+.navigation-link-user-search {
+  background-image: url("../images/header/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-link-user-favourites:hover,
+.navigation-link-user-search:hover,
+.navigation-link-user-favourites:focus,
+.navigation-link-user-search:focus {
+  background-color: #af9080;
+   border: none;
+}
+
+.navigation-link-user-favourites:active,
+.navigation-link-user-search:active {
+  background-color: #af9080;
+  opacity: 0.3;
+}
+
+
 
 .navigation-link-user-goto {
   font-size: 16px;
@@ -796,6 +832,10 @@ input[type="email"]:disabled {
   padding: 0;
   border: 0;
   margin-right: 70px;
+}
+
+.option:focus-within {
+  background-color: red;
 }
 
 /* чекбокс и радиокнопка*/

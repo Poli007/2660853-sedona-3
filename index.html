@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico" sizes="32x32">
   </head>
-
   <body>
     <div class="page-container">
       <header class="page-header">
@@ -36,9 +35,9 @@
           <ul class="navigation-list navigation-list-user">
             <li class="navigation-item-user">
               <a class="navigation-link-user navigation-link-user-search" href="#" title="Поиск">
-                  <span class="visually-hidden">
-                    Поиск
-                  </span>
+                <span class="visually-hidden">
+                  Поиск
+                </span>
               </a>
             </li>
             <li class="navigation-item-user">
@@ -76,14 +75,13 @@
             Преимущества города Седоны
           </h2>
           <div class="describes-advantages-container">
-            <p class="section-describes">
+            <p class="section-describes section-describes-hero">
               Седона — небольшой городок в Аризоне, заслуживающий большего!
             </p>
             <p class="section-text">
               Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
             </p>
           </div>
-
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-image">
               <div class="advantages-container">
@@ -135,7 +133,6 @@
             </li>
           </ul>
         </section>
-
         <section class="infrastructure">
           <h2 class="visually-hidden">
             Инфраструктура города Седоны
@@ -175,7 +172,6 @@
             </li>
           </ul>
         </section>
-
         <section class="search">
           <h2 class="visually-hidden">
             Поиск гостиницы в Седоне
@@ -192,9 +188,7 @@
             </button>
           </div>
         </section>
-
       </main>
-
       <footer class="mailing-footer">
         <section class="mailing">
           <h2 class="visually-hidden">
@@ -207,13 +201,12 @@
             Только полезная информация и никакого спама, <br>честное бойскаутское!</br>
           </p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="login" placeholder="Ваш e-mail" required>
+            <input class="mailing-input" type="email" name="login" placeholder="Ваш e-mail" required>
             <button class="button mailing-button" type="submit">
               Подписаться
             </button>
           </form>
         </section>
-
         <section class="footer-socials">
           <h2 class="visually-hidden">
             Полезные контакты
@@ -261,7 +254,7 @@
             </ul>
             <p class="footer-phone">
               <a class="footer-phone-link" href="tel:88128121212">
-                +7 (812 812-12-12)
+                +7 (812) 812-12-12
               </a>
             </p>
             <p class="footer-logo">
@@ -278,9 +271,96 @@
             </p>
           </div>
         </section>
-
       </footer>
     </div>
-  </body>
+    <!--  Модальное окно  -->
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <section class="modal-content">
+          <h2 class="modal-title"> Поиск гостиницы в Седоне </h2>
+          <form class="search-form cotainer-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="group-form">
+              <label class="сheck-in-label">
+                <p class="сheck-in field-name"> Дата заезда:
+                </p>
+                <input class="сheck-in-date field" type="text" name="сheck-in-date-use" value="27 апреля 2020"
+                  placeholder="Укажите дату заезда" required>
+                <span class="calendar-in">
+                  <button class="calendar-button" type="button">
+                  </button>
+                </span>
+                <span class="message-form message-form-error">
+                  Мы не можем отправить вас в прошлое.
+                </span>
+              </label>
+            </p>
+            <p class="group-form">
+              <label class="сheck-out-label">
+                <p class="сheck-out field-name">
+                  Дата выезда:
+                </p>
+                <input class="сheck-out-date field" type="text" name="сheck-out-date-use" value="1 сентября 2023" placeholder="Укажите дату выезда" required>
+                <span class="calendar-out">
+                  <button class="calendar-button" type="button">
 
+                  </button>
+                </span>
+                <span class="message-form message-form-ok"> На эти даты есть свободные номера. Пока есть.
+                </span>
+              </label>
+            </p>
+            <p class="group-form">
+              <label class="big-label">
+                <p class="big field-name">
+                  Взрослые:
+                </p>
+                <div class="group-contaiver-big">
+                  <button class="minus-button  regulate-button" type="button">
+                    <span class="visually-hidden">
+                      Минус
+                    </span>
+                  </button>
+                  <input class="big-men-input" type="text"  name="big" value="2" placeholder="Укажите количество взрослых">
+                  <button class="plus-button regulate-button" type="button">
+                    <span class="visually-hidden">
+                       Плюс
+                    </span>
+                  </button>
+                </div>
+              </label>
+            </p>
+            <p class="group-form">
+              <label class="children-label">
+                <p class="children field-name">
+                  Дети:
+                </p>
+                <div class="group-contaiver-children">
+                  <button class="minus-button regulate-button" type="button">
+                    <span class="visually-hidden"> Минус </span>
+                  </button>
+                  <input class="children-input" type="text"  name="children" value="2" placeholder="Укажите количество детей">
+                  <button class="plus-button regulate-button" type="button">
+                    <span class="visually-hidden">
+                      Плюс
+                    </span>
+                  </button>
+                </div>
+              </label>
+            </p>
+            <p class="message-form message-form-hidden">
+            </p>
+            <button class="search-button-found" type="submit">
+              Найти
+            </button>
+          </form>
+          <button class="modal-close-button">
+            <span class="visually-hidden">
+              Закрыть
+            </span>
+          </button>
+      </div>
+    </section>
+    </div>
+    </div>
+  </body>
 </html>

@@ -90,20 +90,20 @@
             </h2>
             <fieldset class="catalog-filter-group infrastructure">
               <legend class="catalog-filter-title infrastructure-option">
-                Ифраструктура:
+                Инфраструктура:
               </legend>
               <label class="option option-pool">
-                <input class="option-input" type="checkbox" name="pool" checked>
+                <input class="option-input format-checkbox" type="checkbox" name="pool" checked>
                 <span class="control-option"> </span>
                 <span class="option-name"> Бассейн </span>
                 </label>
               <label class="option option-parking">
-                <input class="option-input" type="checkbox" name="parking" checked>
+                <input class="option-input format-checkbox" type="checkbox" name="parking" checked>
                 <span class="control-option"> </span>
                 <span class="option-name">Парковка </span>
               </label>
               <label class="option option-internet">
-                <input class="option-input" type="checkbox" name="internet">
+                <input class="option-input format-checkbox" type="checkbox" name="internet">
                 <span class="control-option"> </span>
                 <span class="option-name">Wi-Fi</span>
               </label>
@@ -114,17 +114,17 @@
                 Тип Жилья:
               </legend>
               <label class="option hotel-option">
-                <input class="option-input" type="radio" name="hotel-option" value="hotel" checked>
+                <input class="option-input format-radio" type="radio" name="hotel-option" value="hotel" checked>
                 <span class="control-radio control-option"> </span>
                 <span class="option-name">Гостиница</span>
               </label>
               <label class="option option-motel">
-                <input class="option-input" type="radio" name="hotel-option" value="motel">
+                <input class="option-input format-radio" type="radio" name="hotel-option" value="motel">
                 <span class="control-radio control-option"> </span>
                 <span class="option-name">Мотель</span>
               </label>
               <label class="option option-apartments">
-                <input class="option-input" type="radio" name="hotel-option" value="apartments">
+                <input class="option-input format-radio" type="radio" name="hotel-option" value="apartments">
                 <span class="control-radio control-option"> </span>
                 <span class="option-name">Апартаменты</span>
               </label>
@@ -137,11 +137,11 @@
               <div class="number-container">
                 <label class="min">
                   <span class="prefix-min"> от </span>
-                  <input type="number" name="number-min" value="0">
+                  <input class="input-number input-min" type="number" name="number-min" value="0">
                 </label>
                 <label class="max">
                   <span class="prefix-max"> до </span>
-                  <input type="number" name="number-max" value="9000">
+                  <input class="input-number input-max" type="number" name="number-max" value="9000">
                 </label>
               </div>
               <div class="rang-scale">
@@ -170,7 +170,7 @@
             </h2>
             <div class="sorting-container">
               <h3 class="results-search">
-                Найдено страниц:
+                Найдено гостиниц:
                 <span class="value">38</span>
               </h3>
               <select class="sort-price" aria-label="Сортировка по цене" form="filter1">
@@ -344,7 +344,7 @@
           </p>
           <div class="footer-form-container">
             <form class="mailing-form mailing-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" name="login" placeholder="Ваш e-mail" required>
+              <input class="mailing-input" type="email" name="login" placeholder="Ваш e-mail" required>
               <button class="button mailing-button" type="submit">
                 Подписаться
               </button>
@@ -398,7 +398,7 @@
             </ul>
             <p class="footer-phone">
               <a class="footer-phone-link" href="tel:88128121212">
-                +7 (812 812-12-12)
+                +7 (812) 812-12-12
               </a>
             </p>
             <p class="footer-logo">

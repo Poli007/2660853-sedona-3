@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico" sizes="32x32">
   </head>
+
   <body>
     <div class="page-container">
       <header class="page-header">
@@ -279,88 +280,68 @@
         <section class="modal-content">
           <h2 class="modal-title"> Поиск гостиницы в Седоне </h2>
           <form class="search-form cotainer-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="group-form">
-              <label class="сheck-in-label">
-                <p class="сheck-in field-name"> Дата заезда:
-                </p>
-                <input class="сheck-in-date field" type="text" name="сheck-in-date-use" value="27 апреля 2020"
-                  placeholder="Укажите дату заезда" required>
-                <span class="calendar-in">
-                  <button class="calendar-button" type="button">
-                  </button>
-                </span>
-                <span class="message-form message-form-error">
-                  Мы не можем отправить вас в прошлое.
-                </span>
-              </label>
-            </p>
-            <p class="group-form">
-              <label class="сheck-out-label">
-                <p class="сheck-out field-name">
-                  Дата выезда:
-                </p>
-                <input class="сheck-out-date field" type="text" name="сheck-out-date-use" value="1 сентября 2023" placeholder="Укажите дату выезда" required>
-                <span class="calendar-out">
-                  <button class="calendar-button" type="button">
 
-                  </button>
-                </span>
-                <span class="message-form message-form-ok"> На эти даты есть свободные номера. Пока есть.
-                </span>
-              </label>
-            </p>
-            <p class="group-form">
-              <label class="big-label">
-                <p class="big field-name">
-                  Взрослые:
-                </p>
-                <div class="group-contaiver-big">
-                  <button class="minus-button  regulate-button" type="button">
-                    <span class="visually-hidden">
-                      Минус
-                    </span>
-                  </button>
-                  <input class="big-men-input" type="text"  name="big" value="2" placeholder="Укажите количество взрослых">
-                  <button class="plus-button regulate-button" type="button">
-                    <span class="visually-hidden">
-                       Плюс
-                    </span>
-                  </button>
-                </div>
-              </label>
-            </p>
-            <p class="group-form">
-              <label class="children-label">
-                <p class="children field-name">
-                  Дети:
-                </p>
-                <div class="group-contaiver-children">
-                  <button class="minus-button regulate-button" type="button">
-                    <span class="visually-hidden"> Минус </span>
-                  </button>
-                  <input class="children-input" type="text"  name="children" value="2" placeholder="Укажите количество детей">
-                  <button class="plus-button regulate-button" type="button">
-                    <span class="visually-hidden">
-                      Плюс
-                    </span>
-                  </button>
-                </div>
-              </label>
-            </p>
-            <p class="message-form message-form-hidden">
-            </p>
+            <div class="group-form-сheck-in">
+              <label class="сheck-in-label label-name" for="сheck-in"> Дата заезда: </label>
+              <input class="сheck-in-date field" type="text" id="сheck-in" name="сheck-in-date-use"
+                value="27 апреля 2020" placeholder="Укажите дату заезда" required>
+              <span class="message-form message-form-error">
+                Мы не можем отправить вас в прошлое.
+              </span>
+              <button class="calendar-button" type="button"> </button>
+            </div>
+            <div class="group-form-сheck-out">
+              <label class="сheck-out-label label-name" for="сheck-out"> Дата выезда: </label>
+              <input class="сheck-out-date field" type="text" id="сheck-out" name="сheck-out-date-use"
+                value="1 сентября 2023" placeholder="Укажите дату выезда" required>
+              <span class="message-form message-form-ok"> На эти даты есть свободные номера. Пока есть.
+              </span>
+              <button class="calendar-button" type="button"> </button>
+            </div>
+            <div class="group-form-big">
+              <label class="big-label label-name"> Взрослые: </label>
+              <div class="group-contaiver-big">
+                <button class="minus-button  regulate-button" type="button">
+                  <span class="visually-hidden">
+                    Минус
+                  </span>
+                </button>
+                <input class="big-men-input" type="text" name="big" value="2" placeholder="Укажите количество взрослых">
+                <button class="plus-button regulate-button" type="button">
+                  <span class="visually-hidden">
+                    Плюс
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="group-form-children">
+              <label class="children-label label-name"> Дети: </label>
+              <div class="group-contaiver-children">
+                <button class="minus-button regulate-button" type="button">
+                  <span class="visually-hidden"> Минус </span>
+                </button>
+                <input class="children-input" type="text" name="children" value="2"
+                  placeholder="Укажите количество детей">
+                <button class="plus-button regulate-button" type="button">
+                  <span class="visually-hidden">
+                    Плюс
+                  </span>
+                </button>
+              </div>
+            </div>
             <button class="search-button-found" type="submit">
               Найти
             </button>
           </form>
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">
               Закрыть
             </span>
           </button>
       </div>
-    </section>
+      </section>
     </div>
     </div>
   </body>
+
 </html>

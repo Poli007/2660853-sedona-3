@@ -59,7 +59,6 @@
           </ul>
         </nav>
       </header>
-
       <main class="main-inner">
         <div class="page-filter">
           <h1 class="inner-title">
@@ -83,7 +82,6 @@
               </a>
             </li>
           </ul>
-
           <form class="filter" id="filter1" action="https://echo.htmlacademy.ru/" method="get">
             <h2 class="visually-hidden">
               Настройка фильтров
@@ -96,7 +94,7 @@
                 <input class="option-input format-checkbox" type="checkbox" name="pool" checked>
                 <span class="control-option"> </span>
                 <span class="option-name"> Бассейн </span>
-                </label>
+              </label>
               <label class="option option-parking">
                 <input class="option-input format-checkbox" type="checkbox" name="parking" checked>
                 <span class="control-option"> </span>
@@ -108,7 +106,6 @@
                 <span class="option-name">Wi-Fi</span>
               </label>
             </fieldset>
-
             <fieldset class="catalog-filter-group hotel">
               <legend class="catalog-filter-title hotel-option">
                 Тип Жилья:
@@ -129,7 +126,6 @@
                 <span class="option-name">Апартаменты</span>
               </label>
             </fieldset>
-
             <fieldset class="catalog-filter-group catalog-filter-group-price">
               <legend class="catalog-filter-title">
                 Стоимость, ₽:
@@ -147,8 +143,10 @@
               <div class="rang-scale">
                 <div class="rang-bar" style="left: 0; width:226px">
                   <button class="rang-toggle toggle-min" type="button">
+                    <span class="visually-hidden"> Минимальное значение </span>
                   </button>
                   <button class="rang-toggle toggle-max" type="button">
+                    <span class="visually-hidden"> Максимальное значение </span>
                   </button>
                 </div>
               </div>
@@ -330,7 +328,6 @@
           </ul>
         </div>
       </main>
-
       <footer class="mailing-footer">
         <section class="mailing-catalog">
           <h2 class="visually-hidden">
@@ -344,7 +341,8 @@
           </p>
           <div class="footer-form-container">
             <form class="mailing-form mailing-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="mailing-input" type="email" name="login" placeholder="Ваш e-mail" required>
+              <label class="visually-hidden" for="subscribe"> Ваш email </label>
+              <input class="mailing-input" type="email" name="login" id="subscribe" placeholder="Ваш e-mail" required>
               <button class="button mailing-button" type="submit">
                 Подписаться
               </button>

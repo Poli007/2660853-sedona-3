@@ -202,7 +202,8 @@
             Только полезная информация и никакого спама, <br>честное бойскаутское!</br>
           </p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="mailing-input" type="email" name="login" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="subscribe"> Ваш email </label>
+            <input class="mailing-input" type="email" name="login" id="subscribe" placeholder="Ваш e-mail" required>
             <button class="button mailing-button" type="submit">
               Подписаться
             </button>
@@ -299,14 +300,15 @@
               <button class="calendar-button" type="button"> </button>
             </div>
             <div class="group-form-big">
-              <label class="big-label label-name"> Взрослые: </label>
+              <label class="big-label label-name" for="big-man"> Взрослые: </label>
               <div class="group-contaiver-big">
                 <button class="minus-button  regulate-button" type="button">
                   <span class="visually-hidden">
                     Минус
                   </span>
                 </button>
-                <input class="big-men-input" type="text" name="big" value="2" placeholder="Укажите количество взрослых">
+                <input class="big-men-input" type="text" name="big" id="big-man" value="2"
+                  placeholder="Укажите количество взрослых">
                 <button class="plus-button regulate-button" type="button">
                   <span class="visually-hidden">
                     Плюс
@@ -315,12 +317,12 @@
               </div>
             </div>
             <div class="group-form-children">
-              <label class="children-label label-name"> Дети: </label>
+              <label class="children-label label-name" for="small-man"> Дети: </label>
               <div class="group-contaiver-children">
                 <button class="minus-button regulate-button" type="button">
                   <span class="visually-hidden"> Минус </span>
                 </button>
-                <input class="children-input" type="text" name="children" value="2"
+                <input class="children-input" type="text" name="children" id="small-man" value="2"
                   placeholder="Укажите количество детей">
                 <button class="plus-button regulate-button" type="button">
                   <span class="visually-hidden">

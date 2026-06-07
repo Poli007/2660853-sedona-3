@@ -60,7 +60,6 @@ body {
   flex-grow: 1;
 }
 
-/* Кнопки */
 .button {
   font-family: inherit;
   font-size: 20px;
@@ -82,7 +81,6 @@ body {
   color: #000000;
 }
 
-/* для логотипа*/
 .navigation-logo-image {
   display: block;
 }
@@ -107,12 +105,10 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  /*   gap: 4px; */
 }
 
 .navigation-list-user {
   justify-content: flex-end;
-  /*   gap: 4px; */
 }
 
 .navigation-link,
@@ -187,6 +183,7 @@ body {
   padding: 8px 34px;
   align-items: center;
   min-height: 36px;
+  width: 160px;
 }
 
 .navigation-link-user-goto:hover,
@@ -263,7 +260,6 @@ body {
   vertical-align: middle;
 }
 
-/* Фоновая картинка в херо блоке */
 .hero-section {
   background-image: url("../images/index/collar-index.svg"), url("../images/index/index-photo.jpg");
   background-color: #909ba2;
@@ -274,7 +270,6 @@ body {
   background-size: 100%, cover;
 }
 
-/* Призывы к действию */
 .section-describes {
   font-weight: 700;
   font-size: 30px;
@@ -314,7 +309,6 @@ body {
   padding: 96px 304px;
 }
 
-/* Список: преимущества и сервис */
 .advantages-list {
   margin: 0;
   margin-top: 21px;
@@ -472,7 +466,6 @@ body {
   color: #ffffff;
   cursor: default;
 }
-
 
 /* Подвал сайта */
 .mailing,
@@ -723,6 +716,8 @@ body {
   margin-bottom: 40px;
   list-style-type: none;
   position: relative;
+  gap: 10px;
+  list-style: none;
 }
 
 .breadcrumbs-link {
@@ -745,7 +740,6 @@ body {
 
 .breadcrumbs-link .house-icon {
   fill: #ffffff;
-  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -764,19 +758,22 @@ body {
 }
 
 .breadcrumbs-link-catalog {
-  margin-left: 18px;
+  /* margin-left: 18px; */
   width: min-content;
 }
 
-.breadcrumbs-item:first-child::after {
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
   content: '';
   background-image: url("../images/catalog/arrow-right.svg");
   background-repeat: no-repeat;
   width: 8px;
   height: 20px;
-  position: absolute;
-  top: 0;
-  left: 23px;
+  margin-left: 10px;
 }
 
 .filter {
@@ -791,6 +788,7 @@ body {
   padding: 0;
   border: 0;
   margin-right: 70px;
+  max-width: 150px;
 }
 
 .option:focus-within {
@@ -798,10 +796,10 @@ body {
   border-radius: 4px;
 }
 
-/* чекбокс и радиокнопка*/
 .catalog-filter-group-price {
   margin-left: auto;
   margin-right: 70px;
+  max-width: 550px;
 }
 
 .rang-scale {
@@ -863,12 +861,13 @@ body {
   grid-template-rows: 48px;
   grid-column-gap: 2px;
   width: 288px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
-/* Кнопки на странице каталога*/
+  .input-number {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
 
 .button-catalog-container .button-catalog {
   display: block;
@@ -920,8 +919,6 @@ body {
   min-height: 36px;
   box-sizing: border-box;
 }
-
-/* состояния кнопок на странице каталога*/
 
 .description-container .button-catalog:hover,
 .description-container .button-catalog:focus {
@@ -1523,7 +1520,6 @@ label.max {
   background-color: rgba(251, 242, 242, 0.8);
 }
 
-/* активировать */
 .modal-container-close {
   display: none;
 }
